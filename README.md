@@ -4,7 +4,7 @@ Pipelines for seeding/updating a database of international exchange rates, using
 
 ## Workflow
 
-exchangerate.host API -> Apache Airflow -> PortgreSQL
+exchangerate.host API -> Apache Airflow -> PostgreSQL
 
 ## Installation
 
