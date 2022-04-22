@@ -15,11 +15,12 @@ exchangerate.host API -> Apache Airflow -> PostgreSQL
 2. Create a `.env` file in the project directory, and add the following variables:
     - `AIRFLOW_UID=50000`
     - `AIRFLOW_GID=0`
-3. Execute the command `docker-compose up` from the root of the project directory.
-4. Navigate to `localhost:8080/admin` to view the Airflow UI (User: `airflow`; Pwd: `airflow`).
-5. Run the pipeline `create_db` for creating the table `public.exchangerates` in the database `currency_db`.
-6. Run the pipeline `seed_rates` for loading historical data of international exchange rates.
-7. Run the pipeline `update_rates` for loading delta data of international exchange rates.
+3. Execute the command `docker-compose up airflow-init` from the root of the project directory.
+4. Execute the command `docker-compose up` from the root of the project directory.
+5. Navigate to `localhost:8080/admin` to view the Airflow UI (User: `airflow`; Pwd: `airflow`).
+6. Run the pipeline `create_db` for creating the table `public.exchangerates` in the database `currency_db`.
+7. Run the pipeline `seed_rates` for loading historical data of international exchange rates.
+8. Run the pipeline `update_rates` for loading delta data of international exchange rates.
 
 ## DAG Guide 
 
