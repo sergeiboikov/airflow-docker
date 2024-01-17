@@ -1,0 +1,5 @@
+{
+    "dag_id": "dag_process_multiple_file_2",
+    "src_file_name": "file_2",
+    "tgt_table_name": "table_2"
+}

@@ -1,0 +1,20 @@
+sheet: "Sheet1"
+validators:
+    columns:
+        A:
+            - NotBlank:
+              message: Value can not be blank
+            - Type:
+                type: integer
+                message: Value should be integer
+                trim: true
+
+        B:
+            - NotBlank:
+              message: Value can not be blank
+transforms:
+    actions:
+        - DeleteDuplicatesByKeys:
+            keys: ['column_1', 'column_2']
+            keep: First
+    csv_filename: "file_1.csv"
