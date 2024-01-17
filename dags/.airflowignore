@@ -1,0 +1,3 @@
+currency_db/include/.*
+currency_db/sql/.*
+templates/dynamic/multiple_file/generate_dag_files_from_json_config/include/.*
