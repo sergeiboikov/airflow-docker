@@ -4,7 +4,7 @@ Repository with useful DAG templates
 
 ## Workflow
 
-exchangerate.host API -> Apache Airflow -> PortgreSQL
+exchangerate.host API -> Apache Airflow -> PostgreSQL
 
 ## Installation
 
