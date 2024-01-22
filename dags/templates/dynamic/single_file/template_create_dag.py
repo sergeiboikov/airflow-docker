@@ -23,7 +23,8 @@ class ConstDag:
 
 TABLE_NAMES = ["table_1",
                "table_2",
-               "table_3"]
+               "table_3",
+               "table_4"]
 
 # ================== DAG creation ===================== #
 def create_dag(dag_id: str, start_date: datetime, schedule: str,
