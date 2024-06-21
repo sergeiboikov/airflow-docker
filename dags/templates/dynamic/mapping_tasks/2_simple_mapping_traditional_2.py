@@ -37,6 +37,7 @@ def callback_one_two_three():
     # this adjustment is due to op_args expecting each argument as a list
     return [[1], [2], [3]]
 
+
 def callback_plus_10(x: int):
     return x + 10
 
